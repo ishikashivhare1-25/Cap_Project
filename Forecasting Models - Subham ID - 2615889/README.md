@@ -22,9 +22,13 @@ This project implements demand forecasting models for ride booking prediction, u
 Demand_Forecasting_Model/
 ├── Demand_Forecasting_Model.ipynb    # Main Jupyter notebook with analysis
 ├── Models/
-│   ├── metadata.json                  # Model metadata and configuration
-│   ├── prophet_model.json             # Serialized Prophet model
-│   └── train_data.csv                 # Training dataset
+│   ├── arima_model.pkl
+│   ├── sarima_model.pkl
+│   ├── holtwinters_model.pkl
+│   ├── prophet_model.json
+│   ├── all_models.pkl
+│   ├── train_data.csv                 # Training dataset
+│   └── metadata.json                  # Model metadata and configuration
 ├── requirements.txt                   # Python dependencies
 ├── README.md                          # This file
 └── LICENSE                            # MIT License
