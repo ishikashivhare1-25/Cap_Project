@@ -10,7 +10,7 @@ An interactive AI-powered demand forecasting dashboard built using Streamlit and
 Paste your deployed Streamlit link here:
 
 ```text
-https://your-streamlit-app-link.streamlit.app
+https://forecastingcapproject-cet3hsfvdtahmw8jsgzppc.streamlit.app/
 ```
 
 ---
