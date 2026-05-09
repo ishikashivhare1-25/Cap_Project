@@ -1,10 +1,12 @@
-# Demand Forecasting Model
+# Demand Forecasting Intelligence Platform
 
 A comprehensive time-series forecasting project for demand prediction using multiple statistical and machine learning approaches.
 
 ## 📊 Overview
 
-This project implements demand forecasting models for ride booking prediction, utilizing both classical time-series methods (ARIMA) and modern probabilistic forecasting techniques (Prophet). The models are trained on historical booking data and can generate reliable demand forecasts for business planning and resource allocation.
+An interactive AI-powered demand forecasting platform for ride booking prediction using statistical and time-series forecasting models.
+
+The project combines ARIMA, SARIMA, Holt-Winters, Prophet, and Ensemble forecasting with a modern Streamlit analytics dashboard for visualization, diagnostics, and business insights.
 
 ## 🎯 Features
 
@@ -15,23 +17,35 @@ This project implements demand forecasting models for ride booking prediction, u
 - **Prophet Integration**: Facebook's Prophet for robust forecasting with trend and seasonality
 - **Visualization**: Multiple views including daily forecasts, monthly averages, and totals
 - **Model Comparison**: Evaluation metrics and comparative analysis
+- Real-time forecasting visualization
+- Multi-model forecast comparison
+- Dynamic KPI monitoring
+- Forecast diagnostics & volatility analysis
+- AI-generated business insights
+- Demand distribution analysis
+- Weekly pattern analysis
+- Ensemble forecasting support
 
 ## 📁 Project Structure
 
 ```
-Demand_Forecasting_Model/
-├── Demand_Forecasting_Model.ipynb    # Main Jupyter notebook with analysis
-├── Models/
+```text
+Demand_Forecasting_Platform/
+├── app.py
+├── Demand_Forecasting_Model.ipynb
+├── models/
 │   ├── arima_model.pkl
 │   ├── sarima_model.pkl
 │   ├── holtwinters_model.pkl
 │   ├── prophet_model.json
-│   ├── all_models.pkl
-│   ├── train_data.csv                 # Training dataset
-│   └── metadata.json                  # Model metadata and configuration
-├── requirements.txt                   # Python dependencies
-├── README.md                          # This file
-└── LICENSE                            # MIT License
+│   ├── model_metrics.csv
+│   ├── metadata.json
+│   └── train_data.csv
+├── assets/
+├── screenshots/
+├── requirements.txt
+├── README.md
+└── LICENSE                         # MIT License
 ```
 
 ## 🔧 Installation
@@ -72,18 +86,35 @@ jupyter notebook Demand_Forecasting_Model.ipynb
    - **Section 3**: ACF/PACF Analysis
    - **Section 4**: ARIMA Hyperparameter Tuning
    - **Section 5**: Model Forecasting and Visualization
+## 🚀 Run the Dashboard
+
+Launch the Streamlit dashboard:
+
+```bash
+python -m streamlit run app.py
+```
 
 ## 📊 Models Implemented
 
-### ARIMA (AutoRegressive Integrated Moving Average)
-- Grid search over (p, d, q) parameters
-- AIC-based model selection
-- Optimal parameter identification via statistical tests
+### ARIMA
+- Statistical autoregressive forecasting
+- Trend-based modeling
+
+### SARIMA
+- Seasonal ARIMA forecasting
+- Captures recurring seasonal patterns
+
+### Holt-Winters
+- Triple exponential smoothing
+- Handles trend + seasonality effectively
 
 ### Prophet
-- Automated trend and seasonality detection
-- Robust to missing data and outliers
-- Confidence intervals for forecasts
+- Probabilistic forecasting model
+- Robust trend & seasonality decomposition
+
+### Ensemble Forecasting
+- Combined prediction from multiple models
+- Improves forecasting stability
 
 ## 📈 Metrics & Evaluation
 
@@ -118,6 +149,28 @@ The notebook generates:
 - ARIMA vs Prophet forecast comparisons
 - Confidence interval visualizations
 - Monthly aggregate views
+## 🖥️ Dashboard Preview
+
+### Forecast View
+- Interactive demand forecasting charts
+- Historical vs predicted trends
+- KPI overview
+
+### Model Comparison
+- MAE / RMSE / MAPE comparison
+- Best model identification
+- Forecast evaluation charts
+
+### Diagnostics
+- Trend stability analysis
+- Volatility analysis
+- Demand distribution
+- Weekly seasonality patterns
+
+### AI Insights
+- Dynamic business recommendations
+- Forecast interpretation
+- Operational insights
 
 ## 🤝 Contributing
 
@@ -135,6 +188,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 Subham
+Ishika 
 
 ## 📧 Contact
 
