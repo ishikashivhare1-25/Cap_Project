@@ -9,8 +9,7 @@ This notebook analyzes the probability distributions of key ride request variabl
 ## 📁 Files
 
 ```
-├── probability_distribution.ipynb          # Main analysis notebook
-├── rideBookings_preprocessed1.xlsx         # Preprocessed dataset (1,48,767 bookings)
+├── probability_distribution.ipynb          # Main analysis notebook      
 ├── probability_distribution_insights.docx  # Written summary of findings
 ├── requirements.txt                        # Python dependencies
 └── README.md
