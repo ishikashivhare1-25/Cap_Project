@@ -2,8 +2,8 @@ streamlit
 pandas
 numpy
 matplotlib
-statsmodels
-scikit-learn
-openpyxl
 joblib
-prophet
+groq
+openpyxl
+scikit-learn
+statsmodels
